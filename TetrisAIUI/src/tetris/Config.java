@@ -1,7 +1,7 @@
 package tetris;
  
 import java.awt.*;
- 
+/*https://rosettacode.org/wiki/Tetris/Java */
 final class Config {
     final static Color[] colors = {Color.green,Color.green,   
                                    Color.pink, Color.pink, Color.pink, Color.pink,

@@ -1,8 +1,8 @@
 package tetris;
-
+/*https://rosettacode.org/wiki/Tetris/Java */
 enum Shape {
 	
-	
+
 	
    ZShape(new int[][]{{0, -1}, {0, 0}, {-1, 0}, {-1, 1}}),
    SShape(new int[][]{{0, -1}, {0, 0}, {1, 0}, {1, 1}}),

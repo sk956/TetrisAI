@@ -1,5 +1,5 @@
 package tetris;
- 
+ /* modifications from https://rosettacode.org/wiki/Tetris/Java */
 enum AutoShape { 
 	ZShape(new int[][]{{0, -1}, {0, 0}, {-1, 0}, {-1, 1}}), 
 	Z1Shape(new int[][]{{-1, 0}, {0, 0}, {0, 1}, {1, 1}}),

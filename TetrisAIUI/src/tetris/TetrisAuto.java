@@ -9,7 +9,7 @@ import javax.swing.*;
 import static tetris.Config.*;
 import java.util.concurrent.*;
 import java.awt.event.ActionListener;
-
+/*modifications from https://rosettacode.org/wiki/Tetris/Java */
 public class TetrisAuto extends JPanel implements Runnable {
 	enum Dir {
 		right(1, 0), down(0, 1), left(-1, 0);

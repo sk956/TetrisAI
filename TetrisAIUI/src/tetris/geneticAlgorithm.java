@@ -5,9 +5,7 @@ import tetris.*;
 import java.util.*; 
 
 public class geneticAlgorithm {
-	// create the weight function 
-	static HashSet<ArrayList<Double>> weights = new HashSet<ArrayList<Double>>();
-	//static HashSet<ArrayList <AutoShape>> games = new HashSet<ArrayList <AutoShape>>();
+	static HashSet<ArrayList<Double>> weights = new HashSet<ArrayList<Double>>();	
 	static ConcurrentHashMap<ArrayList<Double>, Integer> maps = new ConcurrentHashMap<ArrayList<Double>, Integer> (); 
 
 	public static void weightCreate() {
@@ -24,11 +22,8 @@ public class geneticAlgorithm {
 
 			}
 			weights.add(weightarray); 
-
 		} 
 	}
-
-
 	public static void runGame(ArrayList<Double> w) {
 
 		CountDownLatch latch  = new CountDownLatch(1); 
@@ -45,13 +40,9 @@ public class geneticAlgorithm {
 		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		//createing the average of the score
-		//System.out.println("Final score" + tetris.finalscore);
 		maps.put(w, tetris.finalscore); 
-		//System.out.println(maps);
+	
 	}
-
-
 
 	public static int returnScore(ArrayList<Double> w) {
 
@@ -69,7 +60,6 @@ public class geneticAlgorithm {
 		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		//createing the average of the score
 		return tetris.finalscore;
 	}
 	
