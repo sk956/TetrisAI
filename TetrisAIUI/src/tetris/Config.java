@@ -3,8 +3,14 @@ package tetris;
 import java.awt.*;
  
 final class Config {
-    final static Color[] colors = {Color.green, Color.red, Color.blue,
-        Color.pink, Color.orange, Color.cyan, Color.magenta};
+    final static Color[] colors = {Color.green,Color.green,   
+                                   Color.pink, Color.pink, Color.pink, Color.pink,
+                                   Color.blue, Color.blue,   
+                                   Color.orange, Color.orange, Color.orange, Color.orange,  
+                                   Color.gray, Color.gray, Color.gray, Color.gray,  
+                                   Color.cyan, Color.cyan, 
+                                   Color.red 
+    };
  
     final static Font mainFont = new Font("Monospaced", Font.BOLD, 48);
     final static Font smallFont = mainFont.deriveFont(Font.BOLD, 18);

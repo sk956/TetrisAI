@@ -1,6 +1,9 @@
 package tetris;
 
 enum Shape {
+	
+	
+	
    ZShape(new int[][]{{0, -1}, {0, 0}, {-1, 0}, {-1, 1}}),
    SShape(new int[][]{{0, -1}, {0, 0}, {1, 0}, {1, 1}}),
    IShape(new int[][]{{0, -1}, {0, 0}, {0, 1}, {0, 2}}),
@@ -8,10 +11,11 @@ enum Shape {
    Square(new int[][]{{0, 0}, {1, 0}, {0, 1}, {1, 1}}),
    LShape(new int[][]{{-1, -1}, {0, -1}, {0, 0}, {0, 1}}),
    JShape(new int[][]{{1, -1}, {0, -1}, {0, 0}, {0, 1}});
+	
 
    private Shape(int[][] shape) {
        this.shape = shape;
-       pos = new int[4][2];
+       pos = new int[4][2]; 
        reset();
    }
 
@@ -22,4 +26,7 @@ enum Shape {
    }
 
    final int[][] pos, shape;
+   int rotate;
+	int left;
+	int right;
 }
